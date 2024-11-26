@@ -1,0 +1,332 @@
+# .gitignore 사용법
+# 1. 이 파일에 나열된 항목들은 Git의 버전 관리에서 제외됩니다.
+# 2. 프로젝트에 필요한 항목만 Git에 포함되도록 관리하세요.
+# 3. 특정 파일이나 폴더를 Git에서 제외하고 싶으면 이곳에 추가하세요.
+
+# .gitignore 문법
+# 1. 주석은 '#'으로 시작하며, 설명을 추가할 수 있습니다.
+# 2. 특정 파일이나 폴더를 제외하려면 해당 파일명이나 경로를 적습니다.
+# 3. 폴더를 제외하려면 '/'를 뒤에 붙여서 지정합니다.
+# 4. 와일드카드 '*'는 여러 문자를 대체할 수 있습니다. 예: *.log는 모든 .log 파일을 제외.
+# 5. '!'는 제외할 파일을 명시한 후, 예외를 지정하는 데 사용됩니다. 예: !important.txt는 important.txt 파일을 제외에서 제외하지 않음.
+
+# Byte-compiled / optimized / DLL files
+__pycache__/         
+# Python의 바이트 컴파일된 파일들
+
+*.py[cod]            
+# Python 바이트코드 파일들
+
+*$py.class           
+# Python 클래스 파일
+
+# C extensions
+*.so                 
+# C 확장 모듈
+
+# Distribution / packaging
+.Python              
+# 가상환경 설정 파일
+
+build/               
+# 빌드 디렉토리
+
+dist/                
+# 배포 디렉토리
+
+develop-eggs/        
+# 개발 중인 eggs 디렉토리
+
+downloads/           
+# 다운로드 파일 디렉토리
+
+eggs/                
+# egg 파일 디렉토리
+
+.eggs/               
+# egg 파일 디렉토리
+
+lib/                 
+# 라이브러리 디렉토리
+
+lib64/               
+# 64비트 라이브러리 디렉토리
+
+parts/               
+# 패키징 부속 디렉토리
+
+sdist/               
+# 소스 배포 디렉토리
+
+var/                 
+# 변수 디렉토리
+
+wheels/              
+# wheel 패키지 디렉토리
+
+share/python-wheels/ 
+# Python wheel 패키지 디렉토리
+
+*.egg-info/          
+# egg 정보 디렉토리
+
+.installed.cfg       
+# 설치된 패키지 설정 파일
+
+*.egg                
+# egg 파일
+
+MANIFEST             
+# 패키징 매니페스트
+
+# PyInstaller
+*.manifest           
+# PyInstaller 관련 매니페스트 파일
+
+*.spec               
+# PyInstaller 관련 스펙 파일
+
+# Installer logs
+pip-log.txt          
+# pip 로그 파일
+
+pip-delete-this-directory.txt  
+# pip 삭제 로그 파일
+
+# Unit test / coverage reports
+htmlcov/             
+# HTML 커버리지 리포트 디렉토리
+
+.tox/                
+# tox 테스트 디렉토리
+
+.nox/                
+# nox 테스트 디렉토리
+
+.coverage            
+# 커버리지 파일
+
+.coverage.*          
+# 커버리지 파일들
+
+.cache               
+# 캐시 디렉토리
+
+nosetests.xml        
+# nosetests 리포트 파일
+
+coverage.xml         
+# 커버리지 리포트 XML 파일
+
+*.cover              
+# 커버리지 파일
+
+*.py,cover           
+# 커버리지 파일
+
+.hypothesis/         
+# hypothesis 테스트 캐시
+
+.pytest_cache/       
+# pytest 캐시 디렉토리
+
+cover/               
+# 커버리지 파일
+
+# Translations
+*.mo                 
+# 번역된 파일들
+
+*.pot                
+# POT 파일들
+
+# Django stuff:
+*.log                
+# Django 로그 파일
+
+local_settings.py    
+# Django 로컬 설정 파일
+
+db.sqlite3           
+# SQLite DB 파일
+
+db.sqlite3-journal   
+# SQLite DB 저널 파일
+
+# Flask stuff:
+instance/            
+# Flask 인스턴스 디렉토리
+
+.webassets-cache     
+# Flask WebAssets 캐시
+
+# Scrapy stuff:
+.scrapy              
+# Scrapy 관련 디렉토리
+
+# Sphinx documentation
+docs/_build/         
+# Sphinx 빌드 결과물
+
+# PyBuilder
+.pybuilder/          
+# PyBuilder 관련 디렉토리
+
+target/              
+# PyBuilder 타겟 디렉토리
+
+# Jupyter Notebook
+.ipynb_checkpoints/  
+# Jupyter 노트북 체크포인트
+
+# IPython
+profile_default/     
+# IPython 기본 프로필 디렉토리
+
+ipython_config.py    
+# IPython 설정 파일
+
+# pyenv
+.python-version      
+# pyenv 환경 설정 파일
+
+# pipenv
+#Pipfile.lock         
+# Pipenv의 패키지 잠금 파일 (협업 시 권장)
+
+#Pipfile              
+# Pipenv의 패키지 목록 파일
+
+# poetry
+#poetry.lock          
+# poetry의 패키지 잠금 파일
+
+# pdm
+.pdm.toml            
+# PDM 프로젝트 설정 파일
+
+.pdm-python          
+# PDM Python 설정 파일
+
+.pdm-build/          
+# PDM 빌드 디렉토리
+
+# PEP 582; used by pyflow and pdm
+__pypackages__/      
+# PEP 582 Python 패키지 디렉토리
+
+# Celery stuff
+celerybeat-schedule  
+# Celery 스케줄러 파일
+
+celerybeat.pid       
+# Celery 프로세스 ID 파일
+
+# SageMath parsed files
+*.sage.py            
+# SageMath 파싱된 파일
+
+# Environments
+.env                 
+# 환경 변수 설정 파일
+
+.venv                
+# 가상환경 디렉토리
+
+env/                 
+# 일반 환경 디렉토리
+
+venv/                
+# 가상환경 디렉토리
+
+ENV/                 
+# 환경 디렉토리
+
+env.bak/             
+# 백업된 환경 디렉토리
+
+venv.bak/            
+# 백업된 가상환경 디렉토리
+
+# Spyder project settings
+.spyderproject       
+# Spyder 프로젝트 설정 파일
+
+.spyproject          
+# Spyder 프로젝트 설정 파일
+
+# Rope project settings
+.ropeproject         
+# Rope 프로젝트 설정 파일
+
+# mkdocs documentation
+/site                
+# mkdocs 사이트 디렉토리
+
+# mypy
+.mypy_cache/         
+# mypy 캐시 디렉토리
+
+.dmypy.json          
+# mypy 프로세스 정보 파일
+
+dmypy.json           
+# mypy 프로세스 정보 파일
+
+# Pyre type checker
+.pyre/               
+# Pyre 타입 검사기 관련 디렉토리
+
+# pytype static type analyzer
+.pytype/             
+# pytype 정적 타입 분석기 디렉토리
+
+# Cython debug symbols
+cython_debug/        
+# Cython 디버깅 관련 디렉토리
+
+# PyCharm
+.idea/               
+# PyCharm 설정 디렉토리 (추가시 주의)
+# .idea/는 PyCharm에서 생성하는 프로젝트 설정 파일로, VS Code를 사용한다면 이 항목은 불필요할 수 있음
+
+# Visual Studio Code
+.vscode/             
+# VS Code 설정 디렉토리 (필요시 추가)
+
+# 로그 파일들
+*.log                
+# 로그 파일
+
+*.bak                
+# 백업 파일
+
+*.swp                
+# Vim 스왑 파일
+
+# 데이터베이스 파일들
+*.db                 
+# 데이터베이스 파일
+
+# 가상환경 관련 디렉토리 및 파일들
+bin/                 
+# 가상환경 실행 파일 디렉토리
+
+include/             
+# 가상환경 포함 디렉토리
+
+lib/                 
+# 가상환경 라이브러리 디렉토리
+
+pyvenv.cfg           
+# 가상환경 설정 파일
+
+.DS_Store
+# Mac finder 폴더 메타데이터 정보
+
+etc/
+share/
+# ipywidgets 관련 파일
+
+11m/
+# 가상환경 폴더
